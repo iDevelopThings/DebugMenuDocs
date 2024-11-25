@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE labels SYSTEM "https://resources.jetbrains.com/writerside/1.0/labels-list.dtd">
+<labels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/labels.xsd">
+    <primary-label
+            id="cpp-and-bp-support"
+            name="C++ and Blueprint Support"
+            short-name="C++ and BP"
+            color="purple"
+    >
+        C++ and Blueprint Support
+    </primary-label>
+
+    <primary-label
+            id="bp-features"
+            name="Blueprint Features"
+            short-name="BP"
+            color="purple"
+    >
+        Blueprint Features
+    </primary-label>
+
+    <primary-label
+            id="cpp-only"
+            name="C++ Only"
+            short-name="C++"
+            color="blue"
+    >
+        C++ Only
+    </primary-label>
+
+    <secondary-label id="cpp" name="C++" color="blue">C++ Support</secondary-label>
+    <secondary-label id="bp" name="Blueprint" color="purple">Blueprint Support</secondary-label>
+    <secondary-label id="no-bp" name="No Blueprint" color="red">No Blueprint Support</secondary-label>
+
+</labels>

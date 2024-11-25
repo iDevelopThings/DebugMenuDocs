@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile
+        id="DebugMenu"
+        name="Debug Menu"
+        start-page="PluginOverview.md"
+>
+    <toc-element topic="PluginOverview.md"/>
+    <toc-element topic="DebugMenuSubsystem.md"/>
+    <toc-element topic="DebugMenu.md"/>
+    <toc-element toc-title="Menu Items">
+        <toc-element topic="MenuItem.md" toc-title="Menu Item"/>
+        <toc-element topic="ItemFlags.md"/>
+        <toc-element topic="ItemChildren.md"/>
+    </toc-element>
+    <toc-element toc-title="Item Interaction Handlers">
+        <toc-element topic="ItemInteractionHandlers.md"/>
+
+        <toc-element toc-title="Provided Handlers">
+            <toc-element topic="Handler_ConsoleCommand.md" toc-title="Console Variable Command"/>
+            <toc-element topic="Handler_ExecFunction.md" toc-title="Exec Function"/>
+            <toc-element topic="Handler_ExecCommand.md" toc-title="Exec Command"/>
+            <toc-element topic="Handler_ExecCommandOnOff.md" toc-title="Exec Command(On/Off)"/>
+            <toc-element topic="Handler_Options.md" toc-title="Options"/>
+            <toc-element topic="Handler_Value.md" toc-title="Value"/>
+            <toc-element topic="Handler_Inspector.md" toc-title="Inspector"/>
+        </toc-element>
+    </toc-element>
+
+</instance-profile>
