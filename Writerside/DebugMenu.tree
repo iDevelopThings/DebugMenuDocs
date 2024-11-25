@@ -8,6 +8,7 @@
         start-page="PluginOverview.md"
 >
     <toc-element topic="PluginOverview.md"/>
+    <toc-element topic="Example.md" toc-title="Just show me how"/>
     <toc-element topic="DebugMenuSubsystem.md"/>
     <toc-element topic="DebugMenu.md"/>
     <toc-element toc-title="Menu Items">
@@ -28,5 +29,4 @@
             <toc-element topic="Handler_Inspector.md" toc-title="Inspector"/>
         </toc-element>
     </toc-element>
-
 </instance-profile>

@@ -19,64 +19,9 @@ the function on.
 
 <primary-label ref="bp-features"/>
 
-Nodes:
-<deflist>
+You can use the Add Interaction Handler node [**documented here**](ItemInteractionHandlers.md#item-interaction-for-blueprints) to add this interaction to an item.
 
-<def title="Add Exec Function Interaction">
-Adds this interaction to the specified item
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>UDebugMenuItem* OptionalParent</code> - The parent item, menu root is used if not provided
-
-<code>UFunction* InFunction</code> - A pointer to the UFunction we want to call
-
-Returns the interaction handler
-</def>
-
-<def title="Create Exec Function Item(by ufunction ptr)">
-Creates a new item with this interaction
-
-Inputs:
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>FString InDisplayName</code> - The display name of the item
-
-<code>UFunction* InFunction</code> - A pointer to the UFunction we want to call
-
-<code>UDebugMenuItem* Parent</code> - The parent item, menu root is used if not provided
-
-
-Outputs:
-
-<code>UDebugMenuItem* OutItem</code> - The created item
-
-<code>UItemInteraction_ExecFunction* OutInteraction</code> - The created interaction
-</def>
-
-<def title="Create Exec Function Item(by exec name)">
-Creates a new item with this interaction
-
-Inputs:
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>FString InDisplayName</code> - The display name of the item
-
-<code>FString UFunctionName</code> - The name of the UFunction we want to call(this will search all ufunctions for a match)
-
-<code>UDebugMenuItem* Parent</code> - The parent item, menu root is used if not provided
-
-
-Outputs:
-
-<code>UDebugMenuItem* OutItem</code> - The created item
-
-<code>UItemInteraction_ExecFunction* OutInteraction</code> - The created interaction
-</def>
-
-</deflist>
+![HandlerNode_ExecFunction.png](HandlerNode_ExecFunction.png)
 
 ## C++
 

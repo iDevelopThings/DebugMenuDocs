@@ -3,6 +3,7 @@
 This lets us set a list of values which we can cycle through on the item.
 
 An "Option" is the following struct:
+
 ```c++
 USTRUCT(BlueprintType)
 struct DEBUGMENU_API FDebugItemOption
@@ -17,7 +18,10 @@ struct DEBUGMENU_API FDebugItemOption
 };
 ```
 
+![HandlerPreview_Options.gif](HandlerPreview_Options.gif)
+
 ## Events
+
 <secondary-label ref="bp"/>
 <secondary-label ref="cpp"/>
 
@@ -27,8 +31,13 @@ For C++, you can bind to the `OnOptionSelected` event
 
 This is fired every time the currently selected option is changed, with the `FDebugItemOption` as the argument.
 
-
 ## Blueprints
+
+<primary-label ref="bp-features"/>
+
+You can use the Add Interaction Handler node [**documented here**](ItemInteractionHandlers.md#item-interaction-for-blueprints) to add this interaction to an item.
+
+![HandlerNode_Options.png](HandlerNode_Options.png)
 
 Blueprint users can use the following nodes to add an option to the interaction:
 
@@ -37,47 +46,6 @@ UItemInteraction_Options* AddOptionWithText(const FText& Display)
 UItemInteraction_Options* AddOptionWithTextAndIndex(const int Index, const FText& Display)
 UItemInteraction_Options* AddNewOption(const FDebugItemOption& Option)
 ```
-
-
-<primary-label ref="bp-features"/>
-
-Nodes:
-<deflist>
-
-<def title="Add Options Interaction">
-Adds this interaction to the specified item
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>UDebugMenuItem* OptionalParent</code> - The parent item, menu root is used if not provided
-
-<code>TArray&lt;FDebugItemOption&gt; InOptions</code> - A list of options to show
-
-Returns the interaction handler
-</def>
-
-<def title="Create Options Interaction">
-Creates a new item with this interaction
-
-Inputs:
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>FString InDisplayName</code> - The display name of the item
-
-<code>TArray&lt;FDebugItemOption&gt; InOptions</code> - A list of options to show
-
-<code>UDebugMenuItem* Parent</code> - The parent item, menu root is used if not provided
-
-
-Outputs:
-
-<code>UDebugMenuItem* OutItem</code> - The created item
-
-<code>UItemInteraction_Options* OutInteraction</code> - The created interaction
-</def>
-
-</deflist>
 
 ## C++
 

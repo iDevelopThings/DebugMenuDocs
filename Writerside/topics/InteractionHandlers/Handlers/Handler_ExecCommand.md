@@ -16,43 +16,9 @@ Commands are first routed to the cheat local players `Exec()` function, and then
 
 <primary-label ref="bp-features"/>
 
-Nodes:
-<deflist>
+You can use the Add Interaction Handler node [**documented here**](ItemInteractionHandlers.md#item-interaction-for-blueprints) to add this interaction to an item.
 
-<def title="Add Exec Command Interaction">
-Adds this interaction to the specified item
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>UDebugMenuItem* OptionalParent</code> - The parent item, menu root is used if not provided
-
-<code>FString InCommand</code> - The command string to execute
-
-Returns the interaction handler
-</def>
-
-<def title="Create Exec Command Item">
-Creates a new item with this interaction
-
-Inputs:
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>FString InDisplayName</code> - The display name of the item
-
-<code>FString InCommand</code> - The command string to execute
-
-<code>UDebugMenuItem* Parent</code> - The parent item, menu root is used if not provided
-
-
-Outputs:
-
-<code>UDebugMenuItem* OutItem</code> - The created item
-
-<code>UItemInteraction_ExecCommand* OutInteraction</code> - The created interaction
-</def>
-
-</deflist>
+![HandlerNode_ExecCommand.png](HandlerNode_ExecCommand.png)
 
 ## C++
 

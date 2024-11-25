@@ -21,81 +21,17 @@ Currently we only support the following types:
 - `FString`
 - `uint8`
 
-## Events
+Here we're just setting a random value on the bp in tick, to show it working
 
-<secondary-label ref="bp"/>
-<secondary-label ref="cpp"/>
-
-For blueprints, you can bind to the `OnOptionSelectedDynamic` event
-
-For C++, you can bind to the `OnOptionSelected` event
-
-This is fired every time the currently selected option is changed, with the `FDebugItemOption` as the argument.
+![HandlerPreview_Value.gif](HandlerPreview_Value.gif)
 
 ## Blueprints
 
 <primary-label ref="bp-features"/>
 
-Nodes:
-<deflist>
+You can use the Add Interaction Handler node [**documented here**](ItemInteractionHandlers.md#item-interaction-for-blueprints) to add this interaction to an item.
 
-<def title="Add Value Interaction">
-Adds this interaction to the specified item
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>UDebugMenuItem* OptionalParent</code> - The parent item, menu root is used if not provided
-
-<code>FBPItemInteractionValuePullValue InGetter</code> - Getter delegate to poll for new value
-
-Returns the interaction handler
-</def>
-
-<def title="Create Value Interaction">
-Creates a new item with this interaction
-
-Inputs:
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>FString InDisplayName</code> - The display name of the item
-
-<code>FBPItemInteractionValuePullValue InGetter</code> - Getter delegate to poll for new value
-
-<code>UDebugMenuItem* Parent</code> - The parent item, menu root is used if not provided
-
-
-Outputs:
-
-<code>UDebugMenuItem* OutItem</code> - The created item
-
-<code>UItemInteraction_Value* OutInteraction</code> - The created interaction
-</def>
-
-<def title="Create Value Interaction(Via Property Name)">
-Creates a new item with this interaction - Allowing us to specify a UObject and a property name to pull the value from
-
-Inputs:
-
-<code>UDebugMenu* Menu</code> - The menu to add the item to
-
-<code>FString InDisplayName</code> - The display name of the item
-
-<code>UObject* ObjectInstance</code> - Object instance to pull the value from
-
-<code>FName PropertyName</code> - Property name on the above object
-
-<code>UDebugMenuItem* Parent</code> - The parent item, menu root is used if not provided
-
-
-Outputs:
-
-<code>UDebugMenuItem* OutItem</code> - The created item
-
-<code>UItemInteraction_Value* OutInteraction</code> - The created interaction
-</def>
-
-</deflist>
+![HandlerNode_Value.png](HandlerNode_Value.png)
 
 ## Extra
 

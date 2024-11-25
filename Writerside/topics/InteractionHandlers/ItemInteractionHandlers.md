@@ -116,26 +116,18 @@ Item->AddInteractionHandlerWithBuilder<UItemInteraction_ExecFunction>(
 );
 ```
 
-
-
-
 ## Item Interaction for blueprints
 
 <primary-label ref="bp-features"/>
 
-Now... for blueprint users, it's a bit more difficult. 
+Now... for blueprint users, it's a bit more difficult.
 
-For the majority of built in interactions, I've provided methods that you can call to add the interaction.
+We have a custom K2Node for creating items with an interaction. It can be found via the `AddInteraction`
 
-Let's take the [`UItemInteraction_Value`](Handler_Value.md) interaction as an example
+![AddInteractionHandlerBPSearch.png](AddInteractionHandlerBPSearch.png)
 
-To clarify, this interaction adds an item to our menu, which lets us watch a provided value(which also works with BP).
-So if you have a float value you want to watch, you can use this interaction to do so.
+This node lets us pick an interaction class type, and exposes the inputs needed to initialize it.
 
-This interaction has `Add Value Interaction` `Create Value Interaction` `Create Value Interaction(Via Property Name)` nodes.
+For example:
 
-All provided interactions follow this same naming convention of:
-
-`Add {Name} Interaction` - Adds this interaction to a provided item
-
-`Create {Name} Interaction` - Creates a new item and adds this interaction to it
+![AddExecCommandExample.png](AddExecCommandExample.png)
